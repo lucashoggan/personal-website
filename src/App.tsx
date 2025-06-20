@@ -23,7 +23,7 @@ function App() {
           <h3>Encrypted Chat App</h3> <br />
           <a href="https://chatapp.lucashoggan.co.uk" target="_blank"><p>https://chatapp.lucashoggan.co.uk</p></a> 
           <a href="https://github.com/lucashoggan/encrypted-chat-website" target="_blank"><p>Source Code</p></a> <br /> <br />
-          <p>This is a pretty basic chat app I made that uses asymetric encryption to keep messages private between users, the server can't even see the messages. In fact all 
+          <p>This is a pretty basic chat app I made that uses asymmetric encryption to keep messages private between users, the server can't even see the messages. In fact all 
             it stores are the usernames and public-keys of the users currently online. Uses an express backend to serve the vite frontend with a socket.io server
             to handle websockets to let clients communicate with eachother.
           </p>
