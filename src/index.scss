@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Dm Serif Text", sans-serif, serif;
+    font-family: "Source Serif 4", sans-serif, serif;
 }
 
 nav {
@@ -14,6 +15,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid black;
+    z-index: 4;
     
     .title-block {
         h1 {
@@ -21,7 +23,7 @@ nav {
         }
         h2 {
             font-size: 1rem;
-            font-weight: 300;
+            font-weight: 400;
             margin-top: -0.4rem;
             font-style: italic;
         }
@@ -53,6 +55,7 @@ nav {
         @media (max-width: 700px) {
             a {display:none}
             .burger-dropdown {
+                z-index: 5;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -84,6 +87,70 @@ nav {
                 display: block;
                 background-color: transparent;
                 border: none;
+            }
+        }
+    }
+}
+body {
+    z-index: 1;
+    div#root {
+        z-index: 2;
+    }
+}
+main.home {
+    z-index: 3;
+    .image-header {
+        position: relative;
+        text-align: center;
+        img {
+            width: 100vw;
+            max-height: 30vh;
+            object-fit: cover;
+        }
+        img.mobile {display:none;}
+        @media (max-width: 700px) {
+            img.mobile {display:block}
+            img.desktop {display:none}
+        }
+        h1 {
+            color:white;
+            position:absolute;
+            top: calc(50% - 3.5vw);
+            width: 100vw;
+            font-size: 7vw;
+            height: 2.5rem;
+            transform: translate(0, -50%);
+            font-weight: 400;
+
+            em {
+                font-weight: 700;
+            }
+        }
+    }
+
+    
+    .introduction-contain {
+        padding-top: 1rem;
+        p {
+            width: 30rem;
+            max-width: 80vw;
+            font-size: 1.2rem;
+            margin: 0 auto;
+        }
+        h2 {
+            width: 30rem;
+            max-width: 80vw;
+            margin-left: calc(50vw - min(15rem, 40vw));
+            margin-top: 0.5rem;
+            font-size: 2rem;
+        }
+        .project-contain {
+            width: 30rem;
+            max-width: 80vw;
+            margin-left: calc(50vw - min(15rem, 40vw));
+            margin-top: 0.5rem;
+            a {
+                color: orangered;
             }
         }
     }
