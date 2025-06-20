@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import NavbarView from './components/Navbar'
 import grunge1 from "./assets/grunge1.jpg"
 import grunge_desktop_heading from "./assets/grunge_desktop_heading.jpg"
