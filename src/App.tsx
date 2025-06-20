@@ -16,7 +16,7 @@ function App() {
         <p>
           I am a soon-to-be student working towards my cybersecurity and forensics degree. I am located in Scotland and my main cybersecurity interests are 
           network security and secure software/website development. <br /><br />
-          This website is ment to showcase me and any project(s) I have been working on as shown below.
+          This website is meant to showcase me and any project(s) I have been working on as shown below.
         </p>
         <h2>Projects</h2>
         <div className="project-contain">
