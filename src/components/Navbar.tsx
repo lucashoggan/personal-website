@@ -15,7 +15,7 @@ const NavbarView = () => {
                 <a href="https://github.com/lucashoggan" target="_blank">
                     <h2>GitHub</h2>
                 </a>
-                <a href="https://www.linkedin.com/in/lucas-hoggan-859aa734a/" target="_blank">
+                <a href="https://www.linkedin.com/in/lucashoggan/" target="_blank">
                     <h2>LinkedIn</h2>
                 </a>
                 <button className="burger-btn" onClick={() => setBurgerOpen(true)}><img src={bars}/>
