@@ -90,16 +90,24 @@ body div#root {
   z-index: 2;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 main.home {
   z-index: 3;
 }
 main.home .image-header {
   position: relative;
   text-align: center;
+  width: 100vw;
 }
 main.home .image-header img {
   width: 100vw;
-  max-height: 30vh;
+  margin: 0;
+  padding: 0;
+  max-height: 15vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -117,10 +125,10 @@ main.home .image-header img.mobile {
 main.home .image-header h1 {
   color: white;
   position: absolute;
-  top: calc(50% - 3.5vw);
+  top: calc(50% - 1.5vw);
   width: 100vw;
   font-size: 7vw;
-  height: 2.5rem;
+  height: 7.5vw;
   transform: translate(0, -50%);
   font-weight: 400;
 }
@@ -129,6 +137,7 @@ main.home .image-header h1 em {
 }
 main.home .introduction-contain {
   padding-top: 1rem;
+  width: 100vw;
 }
 main.home .introduction-contain p {
   width: 30rem;
